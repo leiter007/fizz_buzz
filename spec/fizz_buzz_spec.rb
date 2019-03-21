@@ -13,5 +13,9 @@ describe 'fizz_buzz' do
     it "returns 'fizz buzz' if number is divisible by 3 or 5" do
         expect(fizz_buzz(15)).to eq 'fizz buzz'
     end
+    it "returns 'Please enter a number' if number is 'hello'" do
+        expect(fizz_buzz("hello")).to eq "Please enter a number"
+    end
+    
 end
 
